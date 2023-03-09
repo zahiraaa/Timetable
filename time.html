@@ -1,0 +1,5547 @@
+<html>
+  <head>
+      	<title>Tableau de service</title>
+    <link rel="stylesheet" type="text/css" href="time.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+      <script src="time.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#example').DataTable();
+      });
+    </script>
+</head>
+<body>
+	<h1>Tableau de service numéro : .........</h1>
+        <h1>Semaine du : ............ au ...............</h1>
+
+
+
+  <table>
+    <thead>
+       <tr>
+    <td rowspan="2">NOM/TEMPS </td>
+    <td colspan="3">LUNDI</td>
+    <td colspan="3">MARDI</td>
+    <td colspan="3">MERCREDI</td>
+    <td colspan="3">JEUDI</td>
+    <td colspan="3">VENDREDI</td>
+    <td colspan="3">SAMEDI</td>
+    <td colspan="3">DIMANCHE</td>
+    <td colspan="1">TS</td>
+    <td colspan="1">BS</td>
+    <td colspan="1">BA</td>
+    <td colspan="1">BF</td>
+    <td colspan="1">OBSERVATION</td>
+  </tr>
+      <tr>
+        <th>7H</th>
+        <th>13H</th>
+        <th>20H</th>
+        <th>7H</th>
+        <th>13H</th>
+        <th>20H</th>
+        <th>7H</th>
+        <th>13H</th>
+        <th>20H</th>
+        <th>7H</th>
+        <th>13H</th>
+        <th>20H</th>
+        <th>7H</th>
+        <th>13H</th>
+        <th>20H</th>
+        <th>7H</th>
+        <th>13H</th>
+        <th>20H</th>
+        <th>7H</th>
+        <th>13H</th>
+        <th>20H</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="1">Khalfi</td>
+         <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        
+              <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        
+        
+              <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        
+              <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+
+              <td colspan="3">  </td>
+              <td colspan="3">  </td>
+        
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      
+       <tr>
+        <td rowspan="1">REDOUANI</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+    <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+<td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       <tr>
+       
+       
+       <tr>
+        <td rowspan="1">DAKI</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       <tr>
+       
+       
+       <tr>
+        <td rowspan="1">HAMMA</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       <tr>
+           <td rowspan="1">SAADANE</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       <tr>
+       <td rowspan="1">BOUGHANEM</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       <tr>
+       <td rowspan="1">RAOUI</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       <tr>
+       
+       <td rowspan="1">BADILOU</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       
+
+<tr>
+        <td rowspan="1">ANSARI</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      
+      
+
+<tr>
+        <td rowspan="1">CHOUIBA</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+   
+
+<tr>
+        <td rowspan="1">DAHMAN</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    
+
+<tr>
+        <td rowspan="1">ACHDAD</td>
+ <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+  <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+   <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+         <td>
+  <select onchange="colorSelect(this)">
+    <option value=" "> </option>
+    <option value="CP" style="color:red;">CP</option>
+    <option value="ME" style="color:darkblue;">ME</option>
+    <option value="CL" style="color:darkgreen;">CL</option>
+    <option value="CE" style="color:darkorange;">CE</option>
+    <option value="CP+CL" style="color:purple;">PL</option>
+    <option value="CE+CL" style="color:purple;">EL</option>
+    <option value="REG">RE</option>
+    <option value="CONGE">CO</option>
+    <option value="MUTE">MU</option>
+  </select>
+</td>
+
+
+
+        
+    <td>
+          <select>
+            <option value=" "> </option>
+            <option value="CP">CP</option>
+            <option value="ME">ME</option>
+            <option value="CL">CL</option>
+            <option value="CE">CE</option>
+            <option value="REG">RE</option>
+            <option value="CONGE">CO</option>
+             <option value="MUTE">MU</option>
+          </select>
+        </td>
+
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+     
+    
+
+<tr>
+        <td rowspan="1">BOURYAL</td>
+       <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+              <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+                     <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+                            <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    
+    
+
+<tr>
+        <td rowspan="1">ETTOURI</td>
+       <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+              <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+                     <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+                            <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    
+    
+
+<tr>
+        <td rowspan="1">SAADOUNI</td>
+       <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+              <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+                     <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+                            <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    
+
+<tr>
+        <td rowspan="1">BOUBKRI</td>
+       <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+              <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+                     <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+                            <td>
+          <select>
+            <option value=" "> </option>
+            <option value="B">B</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+       <tr>
+ 
+ 
+ 
+
+<tr>
+        <td rowspan="1">SABIR</td>
+       <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+              <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+                     <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+                            <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+ 
+ 
+
+<tr>
+        <td rowspan="1">AZZA</td>
+       <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+              <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+               <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+         <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+                     <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+        
+                            <td>
+          <select>
+            <option value=" "> </option>
+            <option value="M">M</option>
+            <option value="CONGE">CO</option>
+            <option value="MUTE">MU</option>
+           
+          </select>
+        </td>
+       
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+ 
+ <tr>
+        <td rowspan="1">OMARY</td>
+         <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        
+              <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        
+        
+              <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+        </td>
+        
+              <td colspan="3">
+              <select>
+            <option value="REGULIER">REGULIER</option>
+            <option value="CONGE">CONGE</option>
+            </select>
+
+              <td colspan="3">  </td>
+              <td colspan="3">  </td>
+        
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+ 
+ 
+       
+       
+       
+       
+    </tbody>
+  </table>
+</body>
+  <button id="exportBtn">Exporter en PDF</button>
+  	<h2>LEGENDE : </h2>       
+	<p>PL : CP+CL&nbsp;&nbsp;&nbsp;<p>EL : CE+CL&nbsp;&nbsp;&nbsp RE : REGULIER &nbsp;&nbsp CO : Congé&nbsp;&nbsp;&nbsp;MU : Muté&nbsp;&nbsp;&nbsp;TS : Travail de la semaine</p>
+<p>BS : Bilan de la semaine&nbsp;&nbsp;&nbsp;BA : Bilan Antérieur&nbsp;&nbsp;&nbsp;&nbsp;BF : Bilan final&nbsp;&nbsp;&nbsp;Observations comme congé, maladies ou missions</p>
+      
+  </body>
+</html>
+
